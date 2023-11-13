@@ -32,4 +32,10 @@ typedef struct map
 	char *command_name;
 	void (*func)(char **command);
 } function_map;
+
+extern char **environ;
+extern char *line;
+extern char **commands;
+extern char *shell_name;
+extern int status;
 #endif
