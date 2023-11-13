@@ -17,4 +17,6 @@
 #define INTERNAL_COMMAND 2
 #define PATH_COMMAND 3
 #define INVALID_COMMAND -1
+
+#define min(x, y) (((x) < (y)) ? (x) : (y))
 #endif
