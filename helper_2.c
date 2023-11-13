@@ -39,3 +39,26 @@ char *_strtok_r(char *string, char *delim, char **save_ptr)
 	*save_ptr = finish + 1;
 	return (string);
 }
+
+/**
+ * _atoi - changes a string to an integer
+ * @s: the string to be changed
+ *
+ * Return: the converted int
+ */
+int _atoi(char *s)
+{
+	unsigned int n = 0;
+
+	do {
+		if (*s == '-')
+			return (-1);
+		else if ((*s < '0' || *s > '9') && *s != '\0')
+			return (-1);
+		else if (*s >= '0'  && *s <= '9')
+			n = (n * 10) + (*s - '0');
+		else if (n > 0)
+			break;
+	} while (*s++);
+	return (n);
+}
