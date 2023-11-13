@@ -12,4 +12,9 @@
 #include <dirent.h>
 #include <signal.h>
 
+/*constants*/
+#define EXTERNAL_COMMAND 1
+#define INTERNAL_COMMAND 2
+#define PATH_COMMAND 3
+#define INVALID_COMMAND -1
 #endif
